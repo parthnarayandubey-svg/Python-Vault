@@ -1,4 +1,6 @@
 from modules import calculator
+from modules import password_generator
+
 
 print("==========================")
 print("        PYTHON VAULT")
@@ -18,7 +20,7 @@ if choice == "1":
     calculator.start()
 
 elif choice == "2":
-    print("Coming Soon..")
+    password_generator.start()
 
 elif choice == "3":
     print("coming soon..")
