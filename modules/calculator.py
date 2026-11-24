@@ -5,6 +5,17 @@ print("Calculator Module Loaded!")
 
 import math
 
+import math
+
+def get_numbers():
+    while True:
+        try:
+            num1 = float(input("Enter first number: "))
+            num2 = float(input("Enter second number: "))
+            return num1, num2
+
+        except ValueError:
+            print(" Invalid input! Please enter numbers only.")
 
 def start():
     while True:
@@ -21,19 +32,16 @@ def start():
         choice = input("\nChoose an option: ")
 
         if choice == "1":
-            num1 = float(input("Enter first number: "))
-            num2 = float(input("Enter second number: "))
+            num1, num2 = get_numbers()
             print("Result =", num1 + num2)
 
         elif choice == "2":
-            num1 = float(input("Enter first number: "))
-            num2 = float(input("Enter second number: "))
+            num1, num2 = get_numbers()
             print("Result =", num1 - num2)
 
         elif choice == "3":
-            num1 = float(input("Enter first number: "))
-            num2 = float(input("Enter second number: "))
-            print("Result =", num1 * num2)
+            num1, num2 = get_numbers()
+            print("Result =", num1 ** num2)
 
         elif choice == "4":
             num1 = float(input("Enter first number: "))
@@ -50,16 +58,15 @@ def start():
             print("Result =", num1 ** num2)
 
         elif choice == "6":
-            num = float(input("Enter number: "))
-
+            num = get_numbers()
+            
             if num < 0:
                 print("Square root of negative number is not possible.")
             else:
                 print("Result =", math.sqrt(num))
 
         elif choice == "7":
-            num1 = float(input("Enter first number: "))
-            num2 = float(input("Enter second number: "))
+            num1, num2 = get_numbers()
 
             if num2 == 0:
                 print("Cannot divide by zero!")
