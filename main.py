@@ -3,6 +3,7 @@ from modules import password_generator
 from modules import guessing_game
 from modules import quiz_game
 from modules import todo_list
+from modules import expense_tracker
 
 
 print("==========================")
@@ -15,7 +16,8 @@ print("2. Password Generator")
 print("3. Number Guessing Game")
 print("4. Quiz Game")
 print("5. To-Do list")
-print("6. Exit")
+print("6. Expense Tracker")
+print("7. Exit")
 print()
 choice = input("Choose an option: ")
 
@@ -36,6 +38,9 @@ elif choice == "5":
     todo_list.start()
 
 elif choice == "6":
+    expense_tracker.start()
+
+elif choice == "7":
     print("Goodbye!!")
 
 else:
