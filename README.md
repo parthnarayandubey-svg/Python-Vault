@@ -20,6 +20,7 @@ The goal of this repository is to strengthen my programming fundamentals, improv
 - [x] Number Guessing Game
 - [x] Quiz Game
 - [x] To-Do List
+- [x] Expense Tracker
 
 ---
 
