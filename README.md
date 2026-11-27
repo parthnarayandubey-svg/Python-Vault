@@ -22,6 +22,7 @@ The goal of this repository is to strengthen my programming fundamentals, improv
 - [x] To-Do List
 - [x] Expense Tracker
 - [x] Weather App
+-[x] File Organizer
 
 ---
 
