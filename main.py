@@ -5,7 +5,7 @@ from modules import quiz_game
 from modules import todo_list
 from modules import expense_tracker
 from modules import weather_app
-
+from modules import file_organizer
 
 
 print("==========================")
@@ -20,7 +20,8 @@ print("4. Quiz Game")
 print("5. To-Do list")
 print("6. Expense Tracker")
 print("7. Weather App")
-print("8. Exit")
+print("8.File Organizer")
+print("9. Exit")
 print()
 choice = input("Choose an option: ")
 
@@ -47,6 +48,9 @@ elif choice == "7":
     weather_app.start()
 
 elif choice == "8":
+    file_organizer.start()
+    
+elif choice == "9":
     print("Goodbye!!")
 
 else:
