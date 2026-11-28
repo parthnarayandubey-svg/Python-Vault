@@ -6,7 +6,7 @@ from modules import todo_list
 from modules import expense_tracker
 from modules import weather_app
 from modules import file_organizer
-
+from modules import password_manager
 
 print("==========================")
 print("        PYTHON VAULT")
@@ -21,7 +21,8 @@ print("5. To-Do list")
 print("6. Expense Tracker")
 print("7. Weather App")
 print("8.File Organizer")
-print("9. Exit")
+print("9.password_manager")
+print("10. Exit")
 print()
 choice = input("Choose an option: ")
 
@@ -49,8 +50,11 @@ elif choice == "7":
 
 elif choice == "8":
     file_organizer.start()
-    
+
 elif choice == "9":
+    password_manager.start()
+
+elif choice == "10":
     print("Goodbye!!")
 
 else:
