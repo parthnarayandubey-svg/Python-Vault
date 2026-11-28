@@ -23,7 +23,7 @@ The goal of this repository is to strengthen my programming fundamentals, improv
 - [x] Expense Tracker
 - [x] Weather App
 - [x] File Organizer
-
+- [x] Password Manage
 ---
 
 ## 📂 Repository Structure
